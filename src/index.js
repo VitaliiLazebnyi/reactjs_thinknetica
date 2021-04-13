@@ -29,7 +29,7 @@ let title = {
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App title={title} />
   </React.StrictMode>,
   document.getElementById('root')
 );
