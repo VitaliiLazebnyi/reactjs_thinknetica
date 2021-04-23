@@ -4,9 +4,32 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+let title = {
+    book: {
+        title: 'hello, world',
+        description: 'hello, description',
+        pages: 6,
+        progress: 50,
+        image: 'https://www.google.com',
+    },
+    author: {
+        full_name: 'fname lname',
+        email: 'author@mail.com',
+        avatar: 'https://www.google.com',
+        biography: 'bla bla bla'
+    },
+    finance: {
+        min_price: 999,
+        expected_price: 10000,
+        collected_amount: 100000,
+        expected_amount: 500000
+    }
+}
+
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App title={title} />
   </React.StrictMode>,
   document.getElementById('root')
 );
