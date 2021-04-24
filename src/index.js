@@ -21,24 +21,25 @@ let title = {
     authors: [
         {
             full_name: 'fname1 lname1',
-            email: 'author@mail.com',
+            email: 'author1@mail.com',
             avatar: 'https://www.google.com',
             biography: 'bla bla bla'
         },
         {
             full_name: 'fname2 lname2',
-            email: 'author@mail.com',
+            email: 'author2@mail.com',
             avatar: 'https://www.google.com',
             biography: 'bla bla bla'
         },
         {
             full_name: 'fname3 lname3',
-            email: 'author@mail.com',
+            email: 'author3@mail.com',
             avatar: 'https://www.google.com',
             biography: 'bla bla bla'
         }
     ],
     finance: {
+        subscribers: 444,
         min_price: 999,
         expected_price: 10000,
         collected_amount: 100000,

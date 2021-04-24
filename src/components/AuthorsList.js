@@ -2,9 +2,11 @@ import Author from "./Author";
 
 function AuthorsList(props) {
     const authors = props.authors;
-    const listItems = authors.map((author) => <Author author={author}/>);
+    const authorsList = authors.map(
+        (author) => <Author key={author.email} author={author}/>
+    );
     return (
-        <ul>{listItems}</ul>
+        <div className="authors">{authorsList}</div>
     );
 }
 
