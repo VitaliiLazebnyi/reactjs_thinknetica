@@ -12,12 +12,6 @@ let title = {
         progress: 50,
         image: 'https://www.google.com',
     },
-    // author: {
-    //     full_name: 'fname lname',
-    //     email: 'author@mail.com',
-    //     avatar: 'https://www.google.com',
-    //     biography: 'bla bla bla'
-    // },
     authors: [
         {
             full_name: 'fname1 lname1',
