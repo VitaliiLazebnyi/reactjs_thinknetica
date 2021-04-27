@@ -23,7 +23,7 @@ class Title extends Component {
     }
 
     render(){
-        return <div>
+        return <div className='title'>
             <AuthorsList authors={this.props.title.authors}/>
             <Book book={this.props.title.book} />
             <Finance finance={this.props.title.finance} />'
