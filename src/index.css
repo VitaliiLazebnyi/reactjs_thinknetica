@@ -12,10 +12,11 @@ code {
     monospace;
 }
 
-.logo {
+.logo,.footer {
   padding: 10px;
   border: solid;
   margin: 5px;
+  border-radius: 10px;
 }
 
 .authors {
