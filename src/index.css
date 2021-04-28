@@ -33,3 +33,7 @@ code {
   border: solid;
   margin: 5px;
 }
+
+.column {
+  font-weight: bold;
+}
