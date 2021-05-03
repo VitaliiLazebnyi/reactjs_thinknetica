@@ -10,12 +10,27 @@ class Finance extends Component {
     render(){
         return (
             <div className='finance'>
-                Subscribers number: {this.props.finance.subscribers}
-                {this.popular()}
-                Min price: {this.props.finance.min_price}
-                Expected price: {this.props.finance.expected_price}
-                Collected amount: {this.props.finance.collected_amount}
-                Expected amount: {this.props.finance.expected_amount}
+                <div className='row'>
+                    <span className='column'>Subscribers number</span>:
+                    <span className='subscribers'>{this.props.finance.subscribers}</span>
+                    <span className='popular'>{this.popular()}</span>
+                </div>
+                <div className='row'>
+                    <span className='column'>Min price</span>:
+                    <span className='min_price'>{this.props.finance.min_price}</span>
+                </div>
+                <div className='row'>
+                    <span className='column'>Expected price</span>:
+                    <span className='expected_price'>{this.props.finance.expected_price}</span>
+                </div>
+                <div className='row'>
+                    <span className='column'>Collected amount</span>:
+                    <span className='collected_amount'>{this.props.finance.collected_amount}</span>
+                </div>
+                <div className='row'>
+                    <span className='column'>Expected amount</span>:
+                    <span className='expected_amount'>{this.props.finance.expected_amount}</span>
+                </div>
             </div>
         )
     }

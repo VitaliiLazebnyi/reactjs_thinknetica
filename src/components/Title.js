@@ -26,7 +26,7 @@ class Title extends Component {
         return <div className='title'>
             <AuthorsList authors={this.props.title.authors}/>
             <Book book={this.props.title.book} />
-            <Finance finance={this.props.title.finance} />'
+            <Finance finance={this.props.title.finance} />
             <button type="button" onClick={this.showModal}>Subscribe</button>
             <Modal show={this.state.show} handleClose={this.hideModal}>
                 <p>Bay! Pay!</p>
