@@ -23,10 +23,12 @@ class Title extends Component {
     }
 
     render(){
+        const { authors, book, finance } = this.props.title;
+
         return <div className='title'>
-            <AuthorsList authors={this.props.title.authors}/>
-            <Book book={this.props.title.book} />
-            <Finance finance={this.props.title.finance} />
+            <AuthorsList authors={authors}/>
+            <Book book={book} />
+            <Finance finance={finance} />
             <button type="button" onClick={this.showModal}>Subscribe</button>
             <Modal show={this.state.show} handleClose={this.hideModal}>
                 <p>Bay! Pay!</p>
