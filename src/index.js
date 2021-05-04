@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import avatar from './img/avatar.jpg';
 
-let title = {
+const title = {
     book: {
         title: 'hello, world',
         description: 'hello, description',
