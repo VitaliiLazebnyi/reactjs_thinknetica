@@ -52,10 +52,10 @@ const title = {
   ],
   finance: {
     subscribers: 444,
-    min_price: 999,
-    expected_price: 10000,
-    collected_amount: 100000,
-    expected_amount: 500000,
+    minPrice: 999,
+    expectedPrice: 10000,
+    collectedAmount: 100000,
+    expectedAmount: 500000,
   },
 };
 

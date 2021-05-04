@@ -43,10 +43,10 @@ Title.propTypes = {
         finance: PropTypes.shape(
             {
               subscribers: PropTypes.number.isRequired,
-              min_price: PropTypes.number.isRequired,
-              expected_price: PropTypes.number.isRequired,
-              collected_amount: PropTypes.number.isRequired,
-              expected_amount: PropTypes.number.isRequired,
+              minPrice: PropTypes.number.isRequired,
+              expectedPrice: PropTypes.number.isRequired,
+              collectedAmount: PropTypes.number.isRequired,
+              expectedAmount: PropTypes.number.isRequired,
             },
         ).isRequired,
       },
