@@ -6,19 +6,19 @@ class Author extends Component {
             <div className='author'>
                 <div className='row'>
                     <span className='column'>Full name</span>:
-                    <span className='full_name'>{this.props.author.full_name}</span>
+                    <span className='full_name'> {this.props.author.full_name}</span>
                 </div>
                 <div className='row'>
                     <span className='column'>Email</span>:
-                    <span className='email'>{this.props.author.email}</span>
+                    <span className='email'> {this.props.author.email}</span>
                 </div>
                 <div className='row'>
                     <span className='column'>Avatar</span>:
-                    <span className='avatar'>{this.props.author.avatar}</span>
+                    <span className='avatar'> {this.props.author.avatar}</span>
                 </div>
                 <div className='row'>
-                    <span className='column'>Biography</span>:
-                    <span className='biography'>{this.props.author.biography}</span>
+                    <span className='column'>Biography</span>:<br />
+                    <span className='biography'><pre>{this.props.author.biography}</pre></span>
                 </div>
             </div>
         )
