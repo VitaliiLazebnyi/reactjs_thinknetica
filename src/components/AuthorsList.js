@@ -1,8 +1,7 @@
 import Author from "./Author";
 
 function AuthorsList(props) {
-    const authors = props.authors;
-    const authorsList = authors.map(
+    const authorsList = props.authors.map(
         (author) => <Author key={author.email} author={author}/>
     );
     return (
