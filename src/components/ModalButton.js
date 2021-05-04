@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import Modal from './Modal';
 
-class Button extends Component {
+class ModalButton extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -37,9 +37,9 @@ class Button extends Component {
   }
 }
 
-Button.propTypes = {
+ModalButton.propTypes = {
   button_text: PropTypes.string.isRequired,
   modal_text: PropTypes.string.isRequired,
 };
 
-export default Button;
+export default ModalButton;

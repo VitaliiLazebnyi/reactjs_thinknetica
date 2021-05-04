@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Book from './Book';
 import Finance from './Finance';
 import AuthorsList from './AuthorsList';
-import Button from './Button';
+import ModalButton from './ModalButton';
 
 class Title extends Component {
   render() {
@@ -13,7 +13,7 @@ class Title extends Component {
       <AuthorsList authors={authors}/>
       <Book book={book} />
       <Finance finance={finance} />
-      <Button button_text='subscribe' modal_text='Bay! Pay!' />
+      <ModalButton button_text='subscribe' modal_text='Bay! Pay!' />
     </div>;
   }
 }
