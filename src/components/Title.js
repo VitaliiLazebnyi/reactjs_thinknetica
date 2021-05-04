@@ -1,16 +1,56 @@
-import React, { Component } from 'react'
-import Book from "./Book";
-import Finance from "./Finance";
-import Author from "./Author";
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
+import Book from './Book';
+import Finance from './Finance';
+import AuthorsList from './AuthorsList';
+import ModalButton from './ModalButton';
 
 class Title extends Component {
-    render(){
-        return <div>
-            <Author author={this.props.title.author}/>
-            <Book book={this.props.title.book} />
-            <Finance finance={this.props.title.finance} />
-        </div>
-    }
+  render() {
+    const {authors, book, finance} = this.props.title;
+
+    return <div className='title'>
+      <AuthorsList authors={authors}/>
+      <Book book={book} />
+      <Finance finance={finance} />
+      <ModalButton buttonText='subscribe' modalText='Bay! Pay!' />
+    </div>;
+  }
 }
 
-export default Title
+Title.propTypes = {
+  title: PropTypes.shape(
+      {
+        authors: PropTypes.arrayOf(
+            PropTypes.shape(
+                {
+                  fullName: PropTypes.string.isRequired,
+                  email: PropTypes.string.isRequired,
+                  avatar: PropTypes.string.isRequired,
+                  biography: PropTypes.string.isRequired,
+                },
+            ),
+        ).isRequired,
+        book: PropTypes.shape(
+            {
+              title: PropTypes.string.isRequired,
+              description: PropTypes.string.isRequired,
+              pages: PropTypes.number.isRequired,
+              progress: PropTypes.number.isRequired,
+              image: PropTypes.string.isRequired,
+            },
+        ).isRequired,
+        finance: PropTypes.shape(
+            {
+              subscribers: PropTypes.number.isRequired,
+              minPrice: PropTypes.number.isRequired,
+              expectedPrice: PropTypes.number.isRequired,
+              collectedAmount: PropTypes.number.isRequired,
+              expectedAmount: PropTypes.number.isRequired,
+            },
+        ).isRequired,
+      },
+  ).isRequired,
+};
+
+export default Title;

@@ -11,3 +11,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.logo,.footer,.finance,.book {
+  padding: 10px;
+  border: solid;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.authors {
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author,.showMore {
+  padding: 5px;
+  width: 45%;
+  overflow: hidden;
+  border: solid;
+  margin: 5px;
+}
+
+.avatar {
+  border-radius: 30%;
+  float: right
+}
+
+.column {
+  font-weight: bold;
+}
