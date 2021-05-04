@@ -27,7 +27,7 @@ code {
   align-items: center;
 }
 
-.author {
+.author,.showMore {
   padding: 5px;
   width: 45%;
   overflow: hidden;
