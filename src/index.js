@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import avatar from './img/avatar.jpg';
 
 let title = {
     book: {
@@ -16,35 +17,35 @@ let title = {
         {
             full_name: 'Петренко Анатолій Миколайович',
             email: 'anastasia95@consatop.com',
-            avatar: 'https://www.google.com',
+            avatar: avatar,
             biography: "Улюблений спорт: Художня гімнастика\n" +
                 "Улюблений колір: синій"
         },
         {
             full_name: 'Дмитренко Bсеволод Васильович',
             email: 'brovarenko.svit@filel.space',
-            avatar: 'https://www.google.com',
+            avatar: avatar,
             biography: "Улюблений спорт: Дайвінг\n" +
                 "Улюблений колір: оливковий"
         },
         {
             full_name: 'Анна Анатолійович Павлюк',
             email: 'sponomarcuk@greenpdfmanuales.xyz',
-            avatar: 'https://www.google.com',
+            avatar: avatar,
             biography: "Улюблений спорт: плавання\n" +
                 "Улюблений колір: оливковий"
         },
         {
             full_name: 'Анастасія Євгенійович Шевчук',
             email: 'tmirosnicenko@taikz.com',
-            avatar: 'https://www.google.com',
+            avatar: avatar,
             biography: "Улюблений спорт: волейбол\n" +
                 "Улюблений колір: чорний"
         },
         {
             full_name: 'Іванченко Ярослава Миколайович',
             email: 'sponomarcuk@greenpdfmanuales.xyz',
-            avatar: 'https://www.google.com',
+            avatar: avatar,
             biography: "Улюблений спорт: вело\n" +
                 "Улюблений колір: блакитний"
         }
