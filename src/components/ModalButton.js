@@ -24,10 +24,10 @@ class ModalButton extends Component {
   render() {
     return ( <div className='modalControllerButton'>
       <button type="button" onClick={this.showModal}>
-        {this.props.button_text}
+        {this.props.buttonText}
       </button>
       <Modal show={this.state.show} handleClose={this.hideModal}>
-        <p>{this.props.modal_text}</p>
+        <p>{this.props.modalText}</p>
       </Modal>
     </div>
     );
@@ -35,8 +35,8 @@ class ModalButton extends Component {
 }
 
 ModalButton.propTypes = {
-  button_text: PropTypes.string.isRequired,
-  modal_text: PropTypes.string.isRequired,
+  buttonText: PropTypes.string.isRequired,
+  modalText: PropTypes.string.isRequired,
 };
 
 export default ModalButton;

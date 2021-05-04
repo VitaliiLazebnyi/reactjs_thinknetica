@@ -13,7 +13,7 @@ class Title extends Component {
       <AuthorsList authors={authors}/>
       <Book book={book} />
       <Finance finance={finance} />
-      <ModalButton button_text='subscribe' modal_text='Bay! Pay!' />
+      <ModalButton buttonText='subscribe' modalText='Bay! Pay!' />
     </div>;
   }
 }
@@ -24,7 +24,7 @@ Title.propTypes = {
         authors: PropTypes.arrayOf(
             PropTypes.shape(
                 {
-                  full_name: PropTypes.string.isRequired,
+                  fullName: PropTypes.string.isRequired,
                   email: PropTypes.string.isRequired,
                   avatar: PropTypes.string.isRequired,
                   biography: PropTypes.string.isRequired,

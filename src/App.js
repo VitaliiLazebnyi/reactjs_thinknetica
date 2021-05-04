@@ -21,7 +21,7 @@ App.propTypes = {
         authors: PropTypes.arrayOf(
             PropTypes.shape(
                 {
-                  full_name: PropTypes.string.isRequired,
+                  fullName: PropTypes.string.isRequired,
                   email: PropTypes.string.isRequired,
                   avatar: PropTypes.string.isRequired,
                   biography: PropTypes.string.isRequired,

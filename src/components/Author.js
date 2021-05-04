@@ -8,10 +8,10 @@ class Author extends Component {
 
     return (
       <div className='author'>
-        <Avatar url={author.avatar} alt={author.full_name} />
+        <Avatar url={author.avatar} alt={author.fullName} />
         <div className='row'>
           <span className='column'>Full name</span>:
-          <span className='full_name'> {this.props.author.full_name}</span>
+          <span className='fullName'> {this.props.author.fullName}</span>
         </div>
         <div className='row'>
           <span className='column'>Email</span>:
@@ -31,7 +31,7 @@ class Author extends Component {
 Author.propTypes = {
   author: PropTypes.shape(
       {
-        full_name: PropTypes.string.isRequired,
+        fullName: PropTypes.string.isRequired,
         email: PropTypes.string.isRequired,
         avatar: PropTypes.string.isRequired,
         biography: PropTypes.string.isRequired,
