@@ -1,6 +1,6 @@
-import { render, screen } from '@testing-library/react';
+import React from 'react';
+import {render} from '@testing-library/react';
 import App from './App';
-import avatar from "./img/avatar.jpg";
 
 test('renders learn react link', () => {
   const title = {
@@ -17,9 +17,9 @@ test('renders learn react link', () => {
       min_price: 999,
       expected_price: 10000,
       collected_amount: 100000,
-      expected_amount: 500000
-    }
-  }
+      expected_amount: 500000,
+    },
+  };
 
   render(<App title={title} />);
   // const linkElement = screen.getByText(/learn react/i);
