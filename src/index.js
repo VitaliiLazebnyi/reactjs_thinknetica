@@ -5,6 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import avatar from './img/avatar.jpg';
 
+const user = {
+  email: 'some@mail.com',
+  firstName: 'FName',
+  lastName: 'LName',
+  avatarUrl: avatar,
+};
+
 const title = {
   book: {
     title: 'hello, world',
@@ -62,7 +69,7 @@ const title = {
 
 ReactDOM.render(
     <React.StrictMode>
-      <App title={title} />
+      <App title={title} user={user} />
     </React.StrictMode>,
     document.getElementById('root'),
 );
