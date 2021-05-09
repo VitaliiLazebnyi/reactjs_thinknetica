@@ -4,12 +4,14 @@ import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Title from './components/Title';
+import FeedbackForm from './components/FeedbackForm';
 
 function App(props) {
   return (
     <React.Fragment>
       <Header />
       <Title title={props.title} />
+      <FeedbackForm />
       <Footer />
     </React.Fragment>
   );

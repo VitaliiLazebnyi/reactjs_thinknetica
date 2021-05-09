@@ -12,7 +12,7 @@ code {
     monospace;
 }
 
-.logo,.footer,.finance,.book {
+.logo,.footer,.finance,.book,form {
   padding: 10px;
   border: solid;
   margin: 5px;
@@ -42,4 +42,22 @@ code {
 
 .column {
   font-weight: bold;
+}
+
+form>.row {
+  display: flex;
+  padding: 5px;
+}
+
+label {
+  min-width: 80px;
+}
+
+input, textarea{
+  width: 180px;
+}
+
+textarea{
+  width: 180px;
+  height: 180px;
 }
