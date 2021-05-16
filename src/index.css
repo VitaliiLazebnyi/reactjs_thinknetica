@@ -12,7 +12,7 @@ code {
     monospace;
 }
 
-.logo,.footer,.finance,.book,form {
+.logo,.footer,.finance,.book,.userInfo,form {
   padding: 10px;
   border: solid;
   margin: 5px;

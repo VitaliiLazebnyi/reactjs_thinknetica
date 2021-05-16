@@ -9,8 +9,11 @@ const user = {
   email: 'some@mail.com',
   firstName: 'FName',
   lastName: 'LName',
-  avatarUrl: avatar,
+  avatar: avatar,
 };
+
+const AuthContext = React.createContext(user);
+export default AuthContext;
 
 const title = {
   book: {
@@ -69,7 +72,9 @@ const title = {
 
 ReactDOM.render(
     <React.StrictMode>
-      <App title={title} user={user} />
+      <AuthContext.Provider value={user}>
+        <App title={title} />
+      </AuthContext.Provider>
     </React.StrictMode>,
     document.getElementById('root'),
 );
