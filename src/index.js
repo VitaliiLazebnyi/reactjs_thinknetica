@@ -3,16 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-// import AuthContext from './components/AuthContext';
+import AuthContext from './components/AuthContext';
 
 import title from './data/title.json';
-// import user from './data/user.json';
+import user from './data/user.json';
 
 ReactDOM.render(
     <React.StrictMode>
-      {/* <AuthContext.Provider value={user}>*/}
-      <App title={title} />
-      {/* </AuthContext.Provider>*/}
+      <AuthContext.Provider value={user}>
+        <App title={title} />
+      </AuthContext.Provider>
     </React.StrictMode>,
     document.getElementById('root'),
 );
