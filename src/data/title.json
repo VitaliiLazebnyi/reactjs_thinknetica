@@ -1,0 +1,48 @@
+{
+  "book": {
+    "title": "hello, world",
+    "description": "hello, description",
+    "pages": 6,
+    "progress": 50,
+    "image": "https://www.google.com"
+  },
+  "authors": [
+    {
+      "fullName": "Петренко Анатолій Миколайович",
+      "email": "anastasia95@consatop.com",
+      "avatar": "./img/avatar.jpg",
+      "biography": "Улюблений спорт: Художня гімнастика\nУлюблений колір: синій"
+    },
+    {
+      "fullName": "Дмитренко Bсеволод Васильович",
+      "email": "brovarenko.svit@filel.space",
+      "avatar": "./img/avatar.jpg",
+      "biography": "Улюблений спорт: Дайвінг\nУлюблений колір: оливковий"
+    },
+    {
+      "fullName": "Анна Анатолійович Павлюк",
+      "email": "ponomar@greenpdfmanuales.xyz",
+      "avatar": "./img/avatar.jpg",
+      "biography": "Улюблений спорт: плавання\nУлюблений колір: оливковий"
+    },
+    {
+      "fullName": "Анастасія Євгенійович Шевчук",
+      "email": "tmirosnicenko@taikz.com",
+      "avatar": "./img/avatar.jpg",
+      "biography": "Улюблений спорт: волейбол\nУлюблений колір: чорний"
+    },
+    {
+      "fullName": "Іванченко Ярослава Миколайович",
+      "email": "sponomarcuk@greenpdfmanuales.xyz",
+      "avatar": "./img/avatar.jpg",
+      "biography": "Улюблений спорт: вело\nУлюблений колір: блакитний"
+    }
+  ],
+  "finance": {
+    "subscribers": 444,
+    "minPrice": 999,
+    "expectedPrice": 10000,
+    "collectedAmount": 100000,
+    "expectedAmount": 500000
+  }
+}

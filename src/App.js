@@ -6,7 +6,6 @@ import UserInfo from './components/UserInfo';
 import Title from './components/Title';
 import FeedbackForm from './components/FeedbackForm';
 import Footer from './components/Footer';
-import User from './user';
 
 function App(props) {
   return (
