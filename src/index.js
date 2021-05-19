@@ -3,66 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import avatar from './img/avatar.jpg';
+import AuthContext from './components/AuthContext';
 
-const title = {
-  book: {
-    title: 'hello, world',
-    description: 'hello, description',
-    pages: 6,
-    progress: 50,
-    image: 'https://www.google.com',
-  },
-  authors: [
-    {
-      fullName: 'Петренко Анатолій Миколайович',
-      email: 'anastasia95@consatop.com',
-      avatar: avatar,
-      biography: 'Улюблений спорт: Художня гімнастика\n' +
-                'Улюблений колір: синій',
-    },
-    {
-      fullName: 'Дмитренко Bсеволод Васильович',
-      email: 'brovarenko.svit@filel.space',
-      avatar: avatar,
-      biography: 'Улюблений спорт: Дайвінг\n' +
-                'Улюблений колір: оливковий',
-    },
-    {
-      fullName: 'Анна Анатолійович Павлюк',
-      email: 'ponomar@greenpdfmanuales.xyz',
-      avatar: avatar,
-      biography: 'Улюблений спорт: плавання\n' +
-                'Улюблений колір: оливковий',
-    },
-    {
-      fullName: 'Анастасія Євгенійович Шевчук',
-      email: 'tmirosnicenko@taikz.com',
-      avatar: avatar,
-      biography: 'Улюблений спорт: волейбол\n' +
-                'Улюблений колір: чорний',
-    },
-    {
-      fullName: 'Іванченко Ярослава Миколайович',
-      email: 'sponomarcuk@greenpdfmanuales.xyz',
-      avatar: avatar,
-      biography: 'Улюблений спорт: вело\n' +
-                'Улюблений колір: блакитний',
-    },
-  ],
-  finance: {
-    subscribers: 444,
-    minPrice: 999,
-    expectedPrice: 10000,
-    collectedAmount: 100000,
-    expectedAmount: 500000,
-  },
-};
-
+import title from './data/title.json';
+import user from './data/user.json';
 
 ReactDOM.render(
     <React.StrictMode>
-      <App title={title} />
+      <AuthContext.Provider value={user}>
+        <App title={title} />
+      </AuthContext.Provider>
     </React.StrictMode>,
     document.getElementById('root'),
 );
