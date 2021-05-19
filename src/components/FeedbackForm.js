@@ -4,9 +4,9 @@ function FeedbackForm() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const formData = {
-      name: document.querySelector('input[name="name"]').value,
-      email: document.querySelector('input[name="email"]').value,
-      message: document.querySelector('textarea[name="message"]').value,
+      name: event.target.elements.name.value,
+      email: event.target.elements.email.value,
+      message: event.target.elements.message.value,
     };
     console.log(formData);
   };

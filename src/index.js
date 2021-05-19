@@ -4,16 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import avatar from './img/avatar.jpg';
-
-const user = {
-  email: 'some@mail.com',
-  firstName: 'FName',
-  lastName: 'LName',
-  avatar: avatar,
-};
-
-const AuthContext = React.createContext(user);
-export default AuthContext;
+import AuthContext from './components/AuthContext';
 
 const title = {
   book: {
